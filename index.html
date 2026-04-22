@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Cost</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- View: Main -->
+  <section id="view-main">
+    <h1>Meeting Cost</h1>
+    <div id="role-tiles"></div>
+    <div class="summary">
+      Stawka godzinowa: <span id="total-hourly-rate">0,00 PLN</span>
+    </div>
+    <div class="sticky-bottom">
+      <button id="btn-start" disabled>Start</button>
+    </div>
+    <button id="btn-settings">&#9881; Ustawienia</button>
+  </section>
+
+  <!-- View: Active Meeting -->
+  <section id="view-active" hidden>
+    <div class="cost-display">
+      <div class="cost-label">Koszt spotkania</div>
+      <div id="meeting-cost">0,00 PLN</div>
+    </div>
+    <div class="meeting-stats">
+      <div>Czas: <span id="elapsed-time">00:00</span></div>
+      <div>Uczestnicy: <span id="participant-count">0</span></div>
+      <div>Stawka/h: <span id="active-hourly-rate">0,00 PLN</span></div>
+    </div>
+    <div class="meeting-controls">
+      <button id="btn-pause">Pause</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+  </section>
+
+  <!-- View: Settings -->
+  <section id="view-settings" hidden>
+    <h2>Ustawienia</h2>
+    <div id="settings-roles"></div>
+    <div class="currency-selector">
+      <label>Waluta:
+        <select id="currency-select">
+          <option value="PLN">PLN</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+        </select>
+      </label>
+    </div>
+    <div class="settings-actions">
+      <button id="btn-settings-save">Zapisz</button>
+      <button id="btn-settings-cancel">Anuluj</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
