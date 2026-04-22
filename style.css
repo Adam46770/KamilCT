@@ -1,0 +1,263 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  background: #111;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+section {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px 16px 80px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* --- Role tiles --- */
+
+.role-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.role-name {
+  font-size: 1rem;
+  flex: 1;
+}
+
+.role-rate {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-right: 16px;
+}
+
+.role-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-count {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: #f5f5f5;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-count:active {
+  background: #444;
+}
+
+.role-count {
+  font-size: 1.25rem;
+  min-width: 32px;
+  text-align: center;
+}
+
+/* --- Summary --- */
+
+.summary {
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+/* --- Sticky Start button --- */
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  background: #111;
+  padding: 12px 0 8px;
+}
+
+#btn-start {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 12px;
+  background: #2ecc71;
+  color: #111;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#btn-start:disabled {
+  background: #444;
+  color: #888;
+  cursor: not-allowed;
+}
+
+#btn-settings {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: transparent;
+  color: #aaa;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* --- Active Meeting view --- */
+
+.cost-display {
+  text-align: center;
+  margin: 32px 0 24px;
+}
+
+.cost-label {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#meeting-cost {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2ecc71;
+  line-height: 1.1;
+  word-break: break-all;
+}
+
+.meeting-stats {
+  background: #222;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.meeting-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.meeting-controls button {
+  flex: 1;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-pause {
+  background: #e67e22;
+  color: #fff;
+}
+
+#btn-reset {
+  background: #333;
+  color: #f5f5f5;
+}
+
+/* --- Settings view --- */
+
+.settings-role-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.settings-role-row input {
+  height: 44px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #222;
+  color: #f5f5f5;
+  font-size: 1rem;
+  padding: 0 12px;
+}
+
+.settings-role-row input[type="text"] {
+  flex: 2;
+}
+
+.settings-role-row input[type="number"] {
+  flex: 1;
+}
+
+.currency-selector {
+  margin: 16px 0 24px;
+}
+
+.currency-selector label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+}
+
+#currency-select {
+  height: 44px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #222;
+  color: #f5f5f5;
+  font-size: 1rem;
+  padding: 0 12px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.settings-actions button {
+  flex: 1;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-settings-save {
+  background: #2ecc71;
+  color: #111;
+}
+
+#btn-settings-cancel {
+  background: #333;
+  color: #f5f5f5;
+}
